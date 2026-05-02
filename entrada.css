@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header{    /*cabeçalho*/
+    background-color: #c388fa;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    background-color: #caa0f1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul li a:hover {
+    background-color: #875faf;
+}
+
+.container-Entrada{
+    width: 100%;
+    max-width: 900px;
+    margin: 250px auto; /* centraliza */
+    padding: 40px;
+    background-color: #be8dec;
+    border-radius: 10px;
+    position: relative;
+}
+
+.Abas{
+    background-color: #b57aec;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background: transparent;
+}
+
+.Abas li{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #9e5bdb;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+   transition: all 0.3s;
+}
+
+/* aba ativa */
+.Abas li.Ativa{
+    background-color: #be8dec;
+    transform: translateY(5px);
+    z-index: 2;
+}
+
+.button-salvar {
+  background-color: #a16ed1;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  width: 20%;
+  transition: 0.3s;
+}
+
+.button-salvar:hover {
+  background-color: #9b5de5;
+}
+
+.campo-data {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f3e8ff;
+  border: 2px solid #b57aec;
+  font-weight: bold;
+}

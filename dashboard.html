@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Finanças</title>
+    <link rel="stylesheet" href="style.css"> <!--CSS geral-->
+    <link rel="stylesheet" href="dashboard.css"> <!--CSS BASHBOARD-->
+</head>
+
+<body>
+    <header>
+        <h1>Graficos &#128200</h1>
+    </header>
+
+    <!--Barra de navegação-->
+    <ul>
+        <li><a href="index.html">Pagina Login</a></li>
+        <li><a href="dashboard.html">Graficos</a></li>
+        <li><a href="entrada.html">Entrada/Saídas</a></li>
+    </ul>
+
+    <div class="dashboard-Container">
+
+        <!--Container do gasto-Mes-->
+        <div class="topo-mes">
+            <h1>Gasto do Mês: </h1>
+        </div>
+        <div class="graficos-lado">
+            <div class="grafico-mes">
+                <h3>Gasto dos meses</h3>
+                <canvas id="graficoMensal"></canvas>
+            </div>
+            <div class="grafico-area">
+                <h3>Gasto por categoria</h3>
+                <canvas id="graficoPizza"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="entrada.css">
+    <title>Entrada/saida</title>
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+        <h1>Entrada e Saída &#128181</h1>
+    </header>
+
+    <!--Barra de navegação-->
+    <ul>
+        <li><a href="index.html">Pagina Login</a></li>
+        <li><a href="dashboard.html">Graficos</a></li>
+        <li><a href="entrada.html">Entrada/Saídas</a></li>
+    </ul>
+
+    <div class="container-Entrada">
+
+        <!--Abas-->
+        <ul class="Abas">
+
+            <li class="Ativa" onclick="mostrarAba('Entrada', event)">Entrada</li>
+            <li onclick="mostrarAba('Saida', event)">Saída</li>
+        </ul>
+
+        <!--entrada-->
+
+        <div id="Entrada">
+            <form id="formtransacao" action="salvar.php" method="POST">
+                
+                
+                <label for="Valor">Inserir Valor: </label>
+                <input type="text" name="Valor" class="campo" required>
+                
+                <label for="CategoriaEntrada">Categoria:</label>
+                
+                <select name="CategoriaEntrada">
+                    <option>Salário</option>
+                    <option>Extra</option>
+                    
+                </select>
+
+                <label>Data:</label>
+                <input type="date" name="Data"  class="campo-data" required>
+
+                <input type="hidden" name="tipo" value="entrada">
+
+                <button type="submit" class="button-salvar">salvar</button>
+
+            </form>
+        </div>
+
+        <!--Saida-->
+
+        <div id="Saida" style="display: none;">
+            <form id="formsaida" action="salvar.php" method="POST">
+                
+                
+                <label for="ValorSaida">Inserir Valor: </label>
+                <input type="text" name="ValorSaida"  class="campo" required >
+                
+                <label for="CategoriaSaida">Categoria:</label>
+                
+                <select name="CategoriaSaida" class="campo" required>
+                    <option>Aluguel</option>
+                    <option>Luz</option>
+                    <option>Água</option>
+                    <option>Mercado</option>
+                    <option>Internet</option>
+                    <option>Lazer</option>
+                </select>
+
+                <label>Data:</label>
+                <input type="date" name="Data" class="campo-data" required>
+
+                <input type="hidden" name="tipo" value="saida">
+
+                <button type="submit" class="button-salvar">salvar</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="entrada.js"></script>
+</body>
+
+</html>
