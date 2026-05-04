@@ -38,19 +38,19 @@
             <form id="formtransacao" action="salvar.php" method="POST">
                 
                 
-                <label for="Valor">Inserir Valor: </label>
-                <input type="text" name="Valor" class="campo" required>
+                <label for="valor">Inserir Valor: </label>
+                <input type="text" name="valor" class="campo" required>
                 
-                <label for="CategoriaEntrada">Categoria:</label>
+                <label for="categoriaEntrada">Categoria:</label>
                 
-                <select name="CategoriaEntrada">
+                <select name="categoriaEntrada">
                     <option>Salário</option>
                     <option>Extra</option>
                     
                 </select>
 
                 <label>Data:</label>
-                <input type="date" name="Data"  class="campo-data" required>
+                <input type="date" name="data"  class="campo-data" required>
 
                 <input type="hidden" name="tipo" value="entrada">
 
@@ -61,16 +61,16 @@
 
         <!--Saida-->
 
-        <div id="Saida" style="display: none;">
+        <div id="saida" style="display: none;">
             <form id="formsaida" action="salvar.php" method="POST">
                 
                 
-                <label for="ValorSaida">Inserir Valor: </label>
-                <input type="text" name="ValorSaida"  class="campo" required >
+                <label for="valorSaida">Inserir Valor: </label>
+                <input type="text" name="valorSaida"  class="campo" required >
                 
-                <label for="CategoriaSaida">Categoria:</label>
+                <label for="categoriaSaida">Categoria:</label>
                 
-                <select name="CategoriaSaida" class="campo" required>
+                <select name="categoriaSaida" class="campo" required>
                     <option>Aluguel</option>
                     <option>Luz</option>
                     <option>Água</option>
@@ -80,7 +80,7 @@
                 </select>
 
                 <label>Data:</label>
-                <input type="date" name="Data" class="campo-data" required>
+                <input type="date" name="data" class="campo-data" required>
 
                 <input type="hidden" name="tipo" value="saida">
 

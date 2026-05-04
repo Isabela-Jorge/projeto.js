@@ -13,7 +13,7 @@ while($row = $result->fetch_assoc()){ // enquanto tiver linhas no banco...
     $dados[] = $row; // adiciona cada linha dentro do array
 }
 
-echo json_decode($dados);  // transforma o array em JSON (formato que o JavaScript entende)
+echo json_encode($dados);  // transforma o array em JSON (formato que o JavaScript entende)
 
 $conexao->close();  // fecha conexão com o banco
 
